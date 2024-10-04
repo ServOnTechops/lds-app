@@ -178,7 +178,7 @@ const SMEQuestionTableActions = ({
   setDateRange: (range: DateRange | undefined) => void;
 }) => (
   <div className="mb-4 flex flex-col gap-y-4 md:flex-row justify-between items-center">
-    <div className="flex gap-2">
+    {/* <div className="flex gap-2">
       <Button
         onClick={handleDeleteSelected}
         disabled={selectedQuestions.length === 0}
@@ -186,7 +186,7 @@ const SMEQuestionTableActions = ({
         Delete Selected
       </Button>
       <Button onClick={reset}>Reset</Button>
-    </div>
+    </div> */}
     <div className="flex gap-2 flex-col xl:flex-row">
       <div className="flex gap-2">
         <Input
@@ -251,7 +251,7 @@ const SMEQuestionTableData = ({
   <Table>
     <TableHeader>
       <TableRow>
-        <TableHead className="w-[50px]">Select</TableHead>
+        {/* <TableHead className="w-[50px]">Select</TableHead> */}
         <TableHead>Images</TableHead>
         <TableHead
           onClick={() => handleSort("status")}
@@ -266,7 +266,7 @@ const SMEQuestionTableData = ({
           Submitted At{" "}
           {sortField === "createdAt" && (sortOrder === "asc" ? "↑" : "↓")}
         </TableHead>
-        <TableHead>Review Comment</TableHead>
+        {/* <TableHead>Review Comment</TableHead> */}
       </TableRow>
     </TableHeader>
     <TableBody>
@@ -274,7 +274,7 @@ const SMEQuestionTableData = ({
         <>
           {questions.map((question) => (
             <TableRow key={question.id}>
-              <TableCell>
+              {/* <TableCell>
                 <Checkbox
                   checked={selectedQuestions.includes(question.id)}
                   onCheckedChange={(checked) => {
@@ -285,7 +285,7 @@ const SMEQuestionTableData = ({
                     );
                   }}
                 />
-              </TableCell>
+              </TableCell> */}
 
               <ImagesClickableCarousel question={question} />
 
@@ -295,7 +295,7 @@ const SMEQuestionTableData = ({
                   DateTime.DATETIME_SHORT
                 )}
               </TableCell>
-              <TableCell>{question.reviewComment || "N/A"}</TableCell>
+              {/* <TableCell>{question.reviewComment || "N/A"}</TableCell> */}
             </TableRow>
           ))}
         </>

@@ -113,12 +113,12 @@ export default function SMEStats({ smeId }: { smeId: string }) {
                 {(data?.smePerformance?.approvalRate * 100).toFixed(2)}%
               </p>
             </div>
-            <div>
+            {/* <div>
               <h3 className="text-lg font-semibold">Rejection Rate</h3>
               <p className="text-3xl font-bold">
                 {(data?.smePerformance?.rejectionRate * 100).toFixed(2)}%
               </p>
-            </div>
+            </div> */}
           </div>
         </CardContent>
       </Card>
@@ -143,12 +143,12 @@ export default function SMEStats({ smeId }: { smeId: string }) {
                 {(data?.systemStats?.approvalRate * 100).toFixed(2)}%
               </p>
             </div>
-            <div>
+            {/* <div>
               <h3 className="text-lg font-semibold">Overall Rejection Rate</h3>
               <p className="text-3xl font-bold">
                 {(data?.systemStats?.rejectionRate * 100).toFixed(2)}%
               </p>
-            </div>
+            </div> */}
           </div>
         </CardContent>
       </Card>
